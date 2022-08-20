@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/*======= Variables colors =======*/
+:root{
+    --nav-footer-letters-color: #fff;
+    --page-bg: rgb(236, 229, 229);
+    --sections-bg: rgba(218, 63, 16, 0.795);
+    --section-content-bg: rgb(250, 198, 168);
+    --img-hover-border: var(--sections-bg);
+    --border-color: black;
+}
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--page-bg);
+}
+
+/*======= Navigation Bar =======*/
+
+/* Icon */
+nav img{
+    height: 50px;
+    width: 70px;
+}
+
+/* Buttons */
+nav #navbarNav button{
+    margin-left: 5px;
+    height: 40px;
+    width: 145px;
+    color: var(--nav-footer-letters-color);
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--nav-footer-letters-color);
+}
+
+nav a:hover{
+    color: var(--nav-footer-letters-color);
+}
+
+/*======= Main Page =======*/
+#content #site-icon{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/*======= content =======*/
+#content .last-releases, #content .popular-games, #content .updated-games{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    height: 450px;
+    width: 95%;
+    background-color: var(--sections-bg);
+}
+
+#content .last-releases-container, #content .popular-games-container, #content .updated-games-container{
+    height: 320px;
+    margin: 30px 7px 5px 7px;
+    background-color: var(--section-content-bg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+#content .last-releases-first, #content .popular-games-first, #content .updated-games-first{
+    padding: 10px;
+}
+
+#content .last-releases h3,  #content .popular-games h3, #content .updated-games h3{
+    text-align: center;
+    padding-top: 2%;
+}
+
+
+/*======= content Effects =======*/
+#content .last-releases-container img, #content .popular-games-container img, #content .updated-games-container img{
+    height: 300px;
+    width: 350px;
+    display: flex;
+    margin-left: 5px;
+}
+
+#content .last-releases-container img:hover, #content .popular-games-container img:hover, #content .updated-games-container img:hover{
+    border: 10px solid var(--img-hover-border);
+}

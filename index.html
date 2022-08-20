@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JRCC</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Vue Js -->
+    <script src="https://unpkg.com/vue@next" defer></script>
+
+    <!-- Costum  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Logo -->
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo.png"></a>
+          <!-- Responsive btn -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <!-- Nav items -->
+          <div class="dropdown collapse navbar-collapse" id="navbarNav">
+             <!-- Single-PLayer Games -->
+             <div class="btn-group">
+                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+               Single-Player
+                 </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                 <li><a class="dropdown-item" href="javascript:loadPage('./monster-slayer/monster-slayer.html')">Monster Slayer</a></li>
+              </ul>
+             </div>
+
+                <!-- Multi-Player Games -->
+                <div class="btn-group">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Multi-Player
+                    </button>
+                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item" href="javascript:loadPage('./connect4/connect4.html')">Connect 4</a></li>
+                        <li><a class="dropdown-item" href="javascript:loadPage('./pig-game/pig-game.html')">Pig Game</a></li>
+                    </ul>
+                </div>
+              
+                <!-- Other Nav Options -->
+                <button class="btn btn-secondary"><a id="historic" href="javascript:loadPage('historic.html')">Historic</a></button>
+          </div>
+        </div>
+    </nav>
+    <!-- Games -->
+    <div id="content">
+        <img src="./images/logo-bg.png" alt="icon" id="site-icon">
+        <!-- Last releases games -->
+        <div class="last-releases">
+            <h3>Last Releases</h3>
+            <div class="last-releases-container">
+                <div class="last-releases-first">
+                    <a href="javascript:loadPage('./connect4/connect4.html')"><img src="./images/connect4-game.png" alt="connect4 img"></a>
+                </div>
+                <div class="last-releases-second">
+                    <a href="javascript:loadPage('./pig-game/pig-game.html')"><img src="./images/pigGame-game.png" alt="pig-game img"></a>
+                </div>
+                <div class="last-releases-third">
+                    <a href="javascript:loadPage('./monster-slayer/monster-slayer.html')"><img src="./images/monster-slayer-game.png" alt="monster-slayer img"></a>
+                </div>
+            </div>
+        </div>
+        <!-- Popular Games -->
+        <div class="popular-games">
+            <h3>Popular Games</h3>
+            <div class="popular-games-container">
+                <div class="popular-games-first">
+                    <img src="./images/connect4-game.png" alt="connect4">
+                </div>
+                <div class="popular-games-second">
+                    <a href="javascript:loadPage('./pig-game/pig-game.html')"><img src="./images/pigGame-game.png" alt="pig-game img"></a>
+                </div>
+                <div class="popular-games-third">
+                    <a href="javascript:loadPage('./monster-slayer/monster-slayer.html')"><img src="./images/monster-slayer-game.png" alt="monster-slayer img"></a>
+                </div>
+            </div>
+        </div>
+        <!-- Updated Games -->
+        <div class="updated-games">
+            <h3>Updated Games</h3>
+            <div class="updated-games-container">
+                <div class="updated-games-first">
+                    <img src="./images/connect4-game.png" alt="">
+                </div>
+                <div class="updated-games-second">
+                    <a href="javascript:loadPage('./pig-game/pig-game.html')"><img src="./images/pigGame-game.png" alt="pig-game img"></a>
+                </div>
+                <div class="updated-games-third">
+                    <a href="javascript:loadPage('./monster-slayer/monster-slayer.html')"><img src="./images/monster-slayer-game.png" alt="monster-slayer img"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </body>
+    <script src="script.js"></script>
+</html>

@@ -1,0 +1,22 @@
+1. Pagina Inicial
+    -logo ✔
+    -navigation bar❌
+        -Ao reduzir de tamanho aparece um icon com as opções ✔
+        -"games" com uma lista com os jogos a aparecer ✔
+            -2 abas: jogos single player, jogos multiplayer ✔
+        -"historico"❌
+        -Dark Mode❌
+    -Imagem com o logo redondo ✔
+    -Jogos a mostrar em imagens retangulares organizadas:
+        -Ultimos lançamentos ✔
+        -Jogos Populares ✔
+        -Ultimos Atualizados ✔
+    -Ao passar com o rato em cima, aparecer uma border ✔
+;
+
+2. Histórico/Local Storage❌
+    -Informação aparecer do mais recente para o mais antigo❌
+    -Exclusão de jogos do historico❌
+    -Cada Jogo tem a sua borda❌
+    -Filtrar as informações para cada jogo ❌
+;
